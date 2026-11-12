@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="en" data-page-lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>A Computer for a Single Engineer: the &quot;Promin&quot; and the MIR — Software and Computer Museum</title>
+  <meta name="description" content="The first computers were huge, and whole teams of specialists worked with them. An ordinary engineer designing a bridge or a machine tool could hardly get near one. What if you built a computer that one person could work with alone? That is what people in Kyiv dreamed of in the 1960s.">
+  <link rel="alternate" hreflang="uk" href="../04-kompyuter-dlya-odnoho-inzhenera.html">
+  <link rel="alternate" hreflang="en" href="04-kompyuter-dlya-odnoho-inzhenera.html">
+  <link rel="stylesheet" href="../../assets/css/fonts.css">
+  <link rel="stylesheet" href="../../assets/css/tokens.css">
+  <link rel="stylesheet" href="../../assets/css/site.css">
+</head>
+<body id="top">
+<!-- Згенеровано tools/build-articles.js — не редагуйте вручну, змінюйте .md-файли в articles/ -->
+
+<svg width="0" height="0" style="position: absolute;" aria-hidden="true" focusable="false">
+  <symbol id="ic-monitor" viewBox="0 0 12 12"><path fill-rule="evenodd" shape-rendering="crispEdges" d="M1 1h10v8H1zM2 2v6h8V2zM3 3h2v1H3zM5 9h2v1H5zM3 10h6v1H3z"/></symbol>
+  <symbol id="ic-floppy" viewBox="0 0 12 12"><path fill-rule="evenodd" shape-rendering="crispEdges" d="M1 1h9v1h1v9H1zM3 1h5v3H3zM6 2h1v1H6zM3 6h6v4H3z"/></symbol>
+  <symbol id="ic-clock" viewBox="0 0 12 12"><path fill-rule="evenodd" shape-rendering="crispEdges" d="M4 1h4v1h2v2h1v4h-1v2H8v1H4v-1H2V8H1V4h1V2h2zM4 2h4v1h1v1h1v4H9v1H8v1H4V9H3V8H2V4h1V3h1zM6 3h1v3h2v1H6z"/></symbol>
+  <symbol id="ic-person" viewBox="0 0 12 12"><path fill-rule="evenodd" shape-rendering="crispEdges" d="M5 1h2v1h1v2H7v1H5V4H4V2h1zM3 6h6v1h1v4H2V7h1z"/></symbol>
+  <symbol id="ic-ticket" viewBox="0 0 12 12"><path fill-rule="evenodd" shape-rendering="crispEdges" d="M1 3h10v2h-1v2h1v2H1V7h1V5H1zM6 4h1v1H6zM6 7h1v1H6z"/></symbol>
+  <symbol id="ic-calendar" viewBox="0 0 12 12"><path fill-rule="evenodd" shape-rendering="crispEdges" d="M1 2h10v9H1zM2 5h8v5H2zM3 1h1v1H3zM8 1h1v1H8zM3 6h2v2H3z"/></symbol>
+  <symbol id="ic-arrow-right" viewBox="0 0 12 12"><path shape-rendering="crispEdges" d="M1 5h6V2h1v1h1v1h1v1h1v2h-1v1H9v1H8v1H7V7H1z"/></symbol>
+  <symbol id="ic-arrow-down" viewBox="0 0 12 12"><path shape-rendering="crispEdges" d="M5 1V7H2v1h1v1h1v1h1v1h2v-1h1V9h1V8h1V7H7V1z"/></symbol>
+  <symbol id="ic-check" viewBox="0 0 12 12"><path shape-rendering="crispEdges" d="M1 6h2v1h1v1h1V7h1V6h1V5h1V4h1V3h1V2h1v2h-1v1H9v1H8v1H7v1H6v1H5v1H4V9H3V8H2V7H1z"/></symbol>
+  <symbol id="ic-alert" viewBox="0 0 12 12"><path fill-rule="evenodd" shape-rendering="crispEdges" d="M1 1h10v10H1zM2 2v8h8V2zM5 3h2v4H5zM5 8h2v1H5z"/></symbol>
+  <symbol id="ic-phone" viewBox="0 0 12 12"><path fill-rule="evenodd" shape-rendering="crispEdges" d="M2 1h3v3H4v2h1v1h1v1h2V7h3v3h-1v1H7v-1H5V9H4V8H3V6H2V4H1V2h1z"/></symbol>
+  <symbol id="ic-pin" viewBox="0 0 12 12"><path fill-rule="evenodd" shape-rendering="crispEdges" d="M4 1h4v1h1v1h1v4H9v1H8v1H7v2H5V9H4V8H3V7H2V3h1V2h1zM5 3h2v2H5z"/></symbol>
+  <symbol id="ic-book" viewBox="0 0 12 12"><path fill-rule="evenodd" shape-rendering="crispEdges" d="M1 2h4v1h2V2h4v9H7v-1H5v1H1zM2 3h3v6H2zM7 3h3v6H7z"/></symbol>
+  <symbol id="ic-menu" viewBox="0 0 12 12"><path shape-rendering="crispEdges" d="M1 2h10v2H1zM1 5h10v2H1zM1 8h10v2H1z"/></symbol>
+  <symbol id="ic-close" viewBox="0 0 12 12"><path shape-rendering="crispEdges" d="M1 1h2v1h1v1h1v1h2V3h1V2h1V1h2v2h-1v1H9v1H8v2h1v1h1v1h1v2H9v-1H8V9H7V8H5v1H4v1H3v1H1V9h1V8h1V7h1V5H3V4H2V3H1z"/></symbol>
+</svg>
+
+<a class="skip" href="#main" data-i18n="k1">Skip to main content</a>
+
+<header class="hdr">
+  <div class="wrap hdr-bar">
+    <a class="logo hdr-logo" href="../../index.html?lang=en" data-i18n-attr="aria-label:k2" aria-label="Software and Computer Museum — back to top">
+      <span class="logo-box"><svg class="ic i-l" aria-hidden="true"><use href="#ic-monitor"/></svg></span>
+      <span class="disp logo-name">Software and Computer Museum</span>
+    </a>
+    <nav class="nav" data-i18n-attr="aria-label:k4" aria-label="Page sections">
+      <a class="nl" href="../../index.html?lang=en#tours"><svg class="ic i-s" aria-hidden="true"><use href="#ic-arrow-right"/></svg><span data-i18n="k5">Tours</span></a>
+      <a class="nl" href="../../index.html?lang=en#exhibits"><svg class="ic i-s" aria-hidden="true"><use href="#ic-arrow-right"/></svg><span data-i18n="k6">Exhibits</span></a>
+      <a class="nl" href="../../index.html?lang=en#courses"><svg class="ic i-s" aria-hidden="true"><use href="#ic-arrow-right"/></svg><span data-i18n="k7">Courses</span></a>
+      <a class="nl" href="../../articles-en.html" aria-current="page" data-href-uk="../../articles.html" data-href-en="../../articles-en.html"><svg class="ic i-s" aria-hidden="true"><use href="#ic-arrow-right"/></svg><span data-i18n="k148">Articles</span></a>
+      <a class="nl" href="../../index.html?lang=en#contacts"><svg class="ic i-s" aria-hidden="true"><use href="#ic-arrow-right"/></svg><span data-i18n="k8">Contacts</span></a>
+    </nav>
+    <div class="hdr-actions">
+      <div class="langs" role="group" data-i18n-attr="aria-label:k9" aria-label="Site language">
+        <button type="button" class="lang" data-lang="uk" aria-pressed="false" data-i18n-attr="aria-label:k10" aria-label="UA — Ukrainian"><svg class="ic i-s" aria-hidden="true"><use href="#ic-check"/></svg>UA</button>
+        <button type="button" class="lang" data-lang="en" lang="en" aria-pressed="true" data-i18n-attr="aria-label:k12" aria-label="EN — English"><svg class="ic i-s" aria-hidden="true"><use href="#ic-check"/></svg>EN</button>
+      </div>
+      <a class="btn" href="../../index.html?lang=en#booking" data-i18n="k14">Book</a>
+    </div>
+    <button type="button" class="btn btn-ghost burger" aria-expanded="false" aria-controls="mobile-menu">
+      <span class="burger-closed" style="display: inline-flex; align-items: center; gap: var(--space-2);"><svg class="ic i-l" aria-hidden="true"><use href="#ic-menu"/></svg><span data-i18n="k15">Menu</span></span>
+      <span class="burger-open" style="display: inline-flex; align-items: center; gap: var(--space-2);" hidden><svg class="ic i-l" aria-hidden="true"><use href="#ic-close"/></svg><span class="sr-only" data-i18n="k16">Close</span></span>
+    </button>
+  </div>
+  <div class="wrap mmenu" id="mobile-menu" hidden>
+    <nav class="mnav" data-i18n-attr="aria-label:k17" aria-label="Page sections (mobile menu)">
+      <a class="ml" href="../../index.html?lang=en#tours"><span data-i18n="k5">Tours</span><svg class="ic i-m go" aria-hidden="true"><use href="#ic-arrow-right"/></svg><span class="here" aria-hidden="true"><svg class="ic i-s"><use href="#ic-check"/></svg><span data-i18n="k18">you are here</span></span></a>
+      <a class="ml" href="../../index.html?lang=en#exhibits"><span data-i18n="k6">Exhibits</span><svg class="ic i-m go" aria-hidden="true"><use href="#ic-arrow-right"/></svg><span class="here" aria-hidden="true"><svg class="ic i-s"><use href="#ic-check"/></svg><span data-i18n="k18">you are here</span></span></a>
+      <a class="ml" href="../../index.html?lang=en#courses"><span data-i18n="k7">Courses</span><svg class="ic i-m go" aria-hidden="true"><use href="#ic-arrow-right"/></svg><span class="here" aria-hidden="true"><svg class="ic i-s"><use href="#ic-check"/></svg><span data-i18n="k18">you are here</span></span></a>
+      <a class="ml" href="../../articles-en.html" aria-current="page" data-href-uk="../../articles.html" data-href-en="../../articles-en.html"><span data-i18n="k148">Articles</span><svg class="ic i-m go" aria-hidden="true"><use href="#ic-arrow-right"/></svg><span class="here" aria-hidden="true"><svg class="ic i-s"><use href="#ic-check"/></svg><span data-i18n="k18">you are here</span></span></a>
+      <a class="ml" href="../../index.html?lang=en#contacts"><span data-i18n="k8">Contacts</span><svg class="ic i-m go" aria-hidden="true"><use href="#ic-arrow-right"/></svg><span class="here" aria-hidden="true"><svg class="ic i-s"><use href="#ic-check"/></svg><span data-i18n="k18">you are here</span></span></a>
+    </nav>
+    <div class="mmenu-actions">
+      <div class="langs" role="group" data-i18n-attr="aria-label:k9" aria-label="Site language">
+        <button type="button" class="lang" data-lang="uk" aria-pressed="false" data-i18n-attr="aria-label:k10" aria-label="UA — Ukrainian"><svg class="ic i-s" aria-hidden="true"><use href="#ic-check"/></svg>UA</button>
+        <button type="button" class="lang" data-lang="en" lang="en" aria-pressed="true" data-i18n-attr="aria-label:k12" aria-label="EN — English"><svg class="ic i-s" aria-hidden="true"><use href="#ic-check"/></svg>EN</button>
+      </div>
+      <a class="btn" href="../../index.html?lang=en#booking" data-close-menu data-i18n="k14">Book</a>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+<section class="art-head" data-theme="dark" aria-labelledby="art-title">
+  <div class="wrap">
+    <div class="sec-head">
+      <a class="back" href="../../articles-en.html"><svg class="ic i-m" aria-hidden="true"><use href="#ic-arrow-right"/></svg><span>All articles</span></a>
+      <p class="mono prompt" aria-hidden="true">C:\MUSEUM&gt; type ARTICLE_04.TXT</p>
+      <h1 id="art-title" class="disp h2">A Computer for a Single Engineer: the &quot;Promin&quot; and the MIR</h1>
+      <p class="timeline"><strong>Where we are on the timeline:</strong> 1963–1970s. Before this: how the &quot;Dnipro&quot; went to the factory (article 3). Next: how a machine was taught to understand people (article 5).</p>
+    </div>
+  </div>
+</section>
+
+<section class="sec">
+  <div class="wrap">
+    <div class="art">
+      <article class="prose">
+        <p>The first computers were huge, and whole teams of specialists worked with them. An ordinary engineer designing a bridge or a machine tool could hardly get near one. What if you built a computer that one person could work with alone? That is what people in Kyiv dreamed of in the 1960s.</p>
+        <h2>Glushkov's idea</h2>
+        <p>Back then computers were called EOM — &quot;electronic computing machines&quot;. Viktor Glushkov, head of the Kyiv Computing Centre and later of the Institute of Cybernetics, believed that an engineer needed a machine of their own. Not for big scientific problems, but for everyday calculations.</p>
+        <p>Such a machine had to be simple. A person should be able to &quot;talk&quot; to it comfortably, without long training.</p>
+        <h2>The &quot;Promin&quot;: a machine made in eight months</h2>
+        <p>The first step was the &quot;Promin&quot; — a small computer for engineering calculations. Its chief designer was Solomon Pogrebinsky, and its scientific director was Glushkov.</p>
+        <p>According to Glushkov, the &quot;Promin&quot; was created in just eight months. From 1963 it was produced at a factory in Sievierodonetsk.</p>
+        <p>The &quot;Promin&quot; could perform 32 different operations. The memory where the machine keeps numbers while it calculates had only 100 &quot;cells&quot;. For comparison: a modern laptop has so many of these cells that you could never count them.</p>
+        <p>The &quot;Promin&quot; also worked with metallised cards — not the usual paper ones, but cards with a metal coating.</p>
+        <h2>MIR: the &quot;machine for engineering calculations&quot;</h2>
+        <p>In 1965, Glushkov proposed a whole series of new machines. They were called MIR, from the words &quot;machine for engineering calculations&quot;. The MIR-1 appeared that same year.</p>
+        <p>The main idea behind the MIRs was comfortable communication between a person and a machine. They could calculate with numbers of any length. And the language a person uses to &quot;explain&quot; to the machine what to do was built right into the machine itself. The MIR performed up to 8,000 operations a second.</p>
+        <p>Still, it was not &quot;personal&quot; in today's sense: the MIR-1 weighed about 400 kilograms. Your laptop is hundreds of times lighter.</p>
+        <h2>The MIR-2: a screen and a light pen</h2>
+        <p>The MIR-2 appeared in 1969. It performed up to 12,000 operations a second. But the main thing was something else: it had a screen and a light pen.</p>
+        <p>So an engineer could work with the machine in a dialogue — through the screen and the light pen. For the late 1960s, that was a real wonder. The language the MIR-2 &quot;spoke&quot; was called &quot;Analitik&quot; (Analyst) — read about it in article 5.</p>
+        <p>Later the MIR-3 appeared as well. However, sources give different years for its appearance and different speeds, so historians still have work to do here.</p>
+        <h2>The IBM story</h2>
+        <p>Glushkov himself recalled that in 1967, at an exhibition in London, the American company IBM bought a MIR-1. Sounds exciting! But remember: this is one person's memory, not a document. There is no other confirmation of the story so far.</p>
+        <p>Can the MIR be called the world's first personal computer? Opinions differ. Glushkov himself and the Virtual Museum call the MIR a forerunner of the personal computer. More on this in article 6.</p>
+      </article>
+
+      <div class="notes">
+      <aside class="win note" aria-label="Fun fact">
+        <div class="wtitle" aria-hidden="true"><span>FUN_FACT.TXT</span><span class="wctl"><span></span><span></span><span></span></span></div>
+        <div class="winbody">
+          <h2 class="h4"><svg class="ic i-m" aria-hidden="true"><use href="#ic-alert"/></svg>Fun fact</h2>
+          <p>The developers of the MIR-1 received the USSR State Prize — one of the highest awards for scientists and engineers of that time.</p>
+        </div>
+      </aside>
+      <aside class="win note" aria-label="Bridge to today">
+        <div class="wtitle" aria-hidden="true"><span>BRIDGE_TO_TODAY.TXT</span><span class="wctl"><span></span><span></span><span></span></span></div>
+        <div class="winbody">
+          <h2 class="h4"><svg class="ic i-m" aria-hidden="true"><use href="#ic-monitor"/></svg>Bridge to today</h2>
+          <p>The MIR-2's light pen is a distant ancestor of the stylus people draw with on tablets today.</p>
+        </div>
+      </aside>
+      <aside class="win note" aria-label="Bridge to memories">
+        <div class="wtitle" aria-hidden="true"><span>BRIDGE_TO_MEMORIES.TXT</span><span class="wctl"><span></span><span></span><span></span></span></div>
+        <div class="winbody">
+          <h2 class="h4"><svg class="ic i-m" aria-hidden="true"><use href="#ic-clock"/></svg>Bridge to memories</h2>
+          <p>Remember doing sums on a slide rule or an early calculator. Back then, a MIR in an engineering office would have seemed like a real helper.</p>
+        </div>
+      </aside>
+      <aside class="win note" aria-label="Talk about it at home">
+        <div class="wtitle" aria-hidden="true"><span>TALK_ABOUT_IT_AT_HOME.TXT</span><span class="wctl"><span></span><span></span><span></span></span></div>
+        <div class="winbody">
+          <h2 class="h4"><svg class="ic i-m" aria-hidden="true"><use href="#ic-person"/></svg>Talk about it at home</h2>
+          <ul>
+  <li>How is your computer or tablet similar to the MIR, and how is it completely different?</li>
+  <li>How many people would it take to lift a MIR-1?</li>
+  <li>Why is it important that a machine is easy to &quot;talk&quot; to?</li>
+</ul>
+        </div>
+      </aside>
+      <aside class="win note" aria-label="For the classroom">
+        <div class="wtitle" aria-hidden="true"><span>FOR_THE_CLASSROOM.TXT</span><span class="wctl"><span></span><span></span><span></span></span></div>
+        <div class="winbody">
+          <h2 class="h4"><svg class="ic i-m" aria-hidden="true"><use href="#ic-book"/></svg>For the classroom</h2>
+          <ul>
+  <li><strong>Dates:</strong> 1963 — &quot;Promin&quot; production; 1965 — the idea of the MIR series, MIR-1; 1969 — MIR-2 with a screen and a light pen.</li>
+  <li><strong>Names:</strong> V. M. Glushkov, S. B. Pogrebinsky.</li>
+  <li><strong>Topic:</strong> the prehistory of the personal computer.</li>
+</ul>
+        </div>
+      </aside>
+      </div>
+
+      <section class="sources" aria-labelledby="sources-title">
+        <h2 id="sources-title" class="h4">Sources</h2>
+        <ol>
+  <li><a href="https://esu.com.ua/article-67803">MIR (in Ukrainian) — Encyclopedia of Modern Ukraine</a></li>
+  <li><a href="https://kyiv.ua.museum-digital.org/object/71412">Promin (in Ukrainian) — B. Paton State Polytechnic Museum</a></li>
+  <li><a href="https://kyiv.ua.museum-digital.org/object/71424">MIR-3 (in Ukrainian) — B. Paton State Polytechnic Museum</a></li>
+  <li><a href="https://www.computer-museum.ru/galglory/glushkov_book_4_2.htm">Glushkov's memoirs &quot;Confession&quot; (in Russian) — computer-museum.ru</a></li>
+  <li><a href="https://uacomputing.com/stories/emerging-of-soviet-predecessors-of-personal-computers/">The emergence of Soviet forerunners of personal computers (in Ukrainian) — uacomputing.com</a></li>
+  <li><a href="https://uk.wikipedia.org/wiki/%D0%9F%D0%BE%D0%B3%D1%80%D0%B5%D0%B1%D0%B8%D0%BD%D1%81%D1%8C%D0%BA%D0%B8%D0%B9_%D0%A1%D0%BE%D0%BB%D0%BE%D0%BC%D0%BE%D0%BD_%D0%91%D0%B5%D0%BD%D1%96%D0%B0%D0%BC%D1%96%D0%BD%D0%BE%D0%B2%D0%B8%D1%87">Solomon Pogrebinsky (in Ukrainian) — Wikipedia</a></li>
+  <li><a href="https://www.gazeta.ru/tech/2023/08/24/17467928.shtml">Touch screen, a million dollars and two assassination attempts (in Russian) — Gazeta.Ru</a></li>
+</ol>
+      </section>
+
+      <nav class="pager" aria-label="Other articles">
+        <a class="btn btn-ghost prev" href="03-kompyuter-ide-na-zavod.html"><svg class="ic i-m" aria-hidden="true"><use href="#ic-arrow-right"/></svg><span>The Computer Goes to the Factory: How the &quot;Dnipro&quot; Learned to Run Machines</span></a>
+        <a class="btn btn-ghost next" href="05-yak-navchyly-mashynu-rozumity-lyudynu.html"><span>How a Machine Was Taught to Understand People: the &quot;Kyiv&quot; Computer and the First Programming Languages</span><svg class="ic i-m" aria-hidden="true"><use href="#ic-arrow-right"/></svg></a>
+      </nav>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="ftr" data-theme="dark">
+  <div class="wrap ftr-inner">
+    <div class="ftr-grid">
+      <div class="ftr-col ftr-about">
+        <a class="logo" href="../../index.html?lang=en" data-i18n-attr="aria-label:k2" aria-label="Software and Computer Museum — back to top">
+          <span class="logo-box"><svg class="ic i-l" aria-hidden="true"><use href="#ic-monitor"/></svg></span>
+          <span class="disp logo-name">Software and Computer Museum</span>
+        </a>
+        <p class="caption muted" data-i18n="k139">Tours, exhibits and courses about the history of computers and software.</p>
+      </div>
+      <div class="ftr-col">
+        <p class="h4" data-i18n="k8">Contacts</p>
+        <p class="caption muted"><span data-i18n="k131">12 Prykladna St, Kyiv</span><br><span data-i18n="k133">Tue–Sun: 10:00–18:00</span></p>
+        <a class="ftr-link" href="tel:+380440000000" style="font-weight: 600;" data-i18n-attr="aria-label:k122" aria-label="Call the museum: +380 44 000 00 00">+380 44 000 00 00</a>
+      </div>
+      <nav class="ftr-col ftr-nav" data-i18n-attr="aria-label:k140" aria-label="Page sections (footer)">
+        <p class="h4" data-i18n="k141">Sections</p>
+        <a class="ftr-link" href="../../index.html?lang=en#tours" data-i18n="k5">Tours</a>
+        <a class="ftr-link" href="../../index.html?lang=en#exhibits" data-i18n="k6">Exhibits</a>
+        <a class="ftr-link" href="../../index.html?lang=en#courses" data-i18n="k7">Courses</a>
+        <a class="ftr-link" href="../../articles-en.html" data-href-uk="../../articles.html" data-href-en="../../articles-en.html" data-i18n="k148">Articles</a>
+        <a class="ftr-link" href="../../index.html?lang=en#booking" data-i18n="k142">Booking</a>
+      </nav>
+      <div class="ftr-col">
+        <p class="h4" data-i18n="k143">Language</p>
+        <div class="langs" role="group" data-i18n-attr="aria-label:k9" aria-label="Site language">
+          <button type="button" class="lang" data-lang="uk" aria-pressed="false" data-i18n-attr="aria-label:k10" aria-label="UA — Ukrainian"><svg class="ic i-s" aria-hidden="true"><use href="#ic-check"/></svg>UA</button>
+          <button type="button" class="lang" data-lang="en" lang="en" aria-pressed="true" data-i18n-attr="aria-label:k12" aria-label="EN — English"><svg class="ic i-s" aria-hidden="true"><use href="#ic-check"/></svg>EN</button>
+        </div>
+      </div>
+    </div>
+    <div class="ftr-bottom">
+      <p class="caption muted" data-i18n="k144">© 2026 Software and Computer Museum</p>
+      <p class="mono muted" style="margin: 0;" aria-hidden="true" data-i18n="k145">C:\MUSEUM&gt; exit</p>
+    </div>
+  </div>
+</footer>
+
+<script src="../../assets/js/content.uk.js"></script>
+<script src="../../assets/js/content.en.js"></script>
+<script src="../../assets/js/app.js"></script>
+</body>
+</html>

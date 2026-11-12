@@ -1,0 +1,22 @@
+# Особисті налаштування Claude Code (локальні шляхи, дозволи)
+.claude/settings.local.json
+
+# Секрети й локальне оточення
+.env
+.env.*
+*.pem
+*.key
+
+# Залежності
+node_modules/
+
+# Системні файли
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Внутрішні документи (не для публікації)
+ZVIT.md
+handoff.md
+plan.md
+*.docx

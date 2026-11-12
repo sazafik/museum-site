@@ -1,0 +1,482 @@
+<!doctype html>
+<html lang="uk">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Software and Computer Museum</title>
+  <meta name="description" content="Екскурсії, експонати й курси про історію комп'ютерів і програм.">
+  <link rel="stylesheet" href="assets/css/fonts.css">
+  <link rel="stylesheet" href="assets/css/tokens.css">
+  <link rel="stylesheet" href="assets/css/site.css">
+</head>
+<body id="top">
+
+<!-- Піксельні піктограми 12×12 -->
+<svg width="0" height="0" style="position: absolute;" aria-hidden="true" focusable="false">
+  <symbol id="ic-monitor" viewBox="0 0 12 12"><path fill-rule="evenodd" shape-rendering="crispEdges" d="M1 1h10v8H1zM2 2v6h8V2zM3 3h2v1H3zM5 9h2v1H5zM3 10h6v1H3z"/></symbol>
+  <symbol id="ic-floppy" viewBox="0 0 12 12"><path fill-rule="evenodd" shape-rendering="crispEdges" d="M1 1h9v1h1v9H1zM3 1h5v3H3zM6 2h1v1H6zM3 6h6v4H3z"/></symbol>
+  <symbol id="ic-clock" viewBox="0 0 12 12"><path fill-rule="evenodd" shape-rendering="crispEdges" d="M4 1h4v1h2v2h1v4h-1v2H8v1H4v-1H2V8H1V4h1V2h2zM4 2h4v1h1v1h1v4H9v1H8v1H4V9H3V8H2V4h1V3h1zM6 3h1v3h2v1H6z"/></symbol>
+  <symbol id="ic-person" viewBox="0 0 12 12"><path fill-rule="evenodd" shape-rendering="crispEdges" d="M5 1h2v1h1v2H7v1H5V4H4V2h1zM3 6h6v1h1v4H2V7h1z"/></symbol>
+  <symbol id="ic-ticket" viewBox="0 0 12 12"><path fill-rule="evenodd" shape-rendering="crispEdges" d="M1 3h10v2h-1v2h1v2H1V7h1V5H1zM6 4h1v1H6zM6 7h1v1H6z"/></symbol>
+  <symbol id="ic-calendar" viewBox="0 0 12 12"><path fill-rule="evenodd" shape-rendering="crispEdges" d="M1 2h10v9H1zM2 5h8v5H2zM3 1h1v1H3zM8 1h1v1H8zM3 6h2v2H3z"/></symbol>
+  <symbol id="ic-arrow-right" viewBox="0 0 12 12"><path shape-rendering="crispEdges" d="M1 5h6V2h1v1h1v1h1v1h1v2h-1v1H9v1H8v1H7V7H1z"/></symbol>
+  <symbol id="ic-arrow-down" viewBox="0 0 12 12"><path shape-rendering="crispEdges" d="M5 1V7H2v1h1v1h1v1h1v1h2v-1h1V9h1V8h1V7H7V1z"/></symbol>
+  <symbol id="ic-check" viewBox="0 0 12 12"><path shape-rendering="crispEdges" d="M1 6h2v1h1v1h1V7h1V6h1V5h1V4h1V3h1V2h1v2h-1v1H9v1H8v1H7v1H6v1H5v1H4V9H3V8H2V7H1z"/></symbol>
+  <symbol id="ic-alert" viewBox="0 0 12 12"><path fill-rule="evenodd" shape-rendering="crispEdges" d="M1 1h10v10H1zM2 2v8h8V2zM5 3h2v4H5zM5 8h2v1H5z"/></symbol>
+  <symbol id="ic-phone" viewBox="0 0 12 12"><path fill-rule="evenodd" shape-rendering="crispEdges" d="M2 1h3v3H4v2h1v1h1v1h2V7h3v3h-1v1H7v-1H5V9H4V8H3V6H2V4H1V2h1z"/></symbol>
+  <symbol id="ic-pin" viewBox="0 0 12 12"><path fill-rule="evenodd" shape-rendering="crispEdges" d="M4 1h4v1h1v1h1v4H9v1H8v1H7v2H5V9H4V8H3V7H2V3h1V2h1zM5 3h2v2H5z"/></symbol>
+  <symbol id="ic-book" viewBox="0 0 12 12"><path fill-rule="evenodd" shape-rendering="crispEdges" d="M1 2h4v1h2V2h4v9H7v-1H5v1H1zM2 3h3v6H2zM7 3h3v6H7z"/></symbol>
+  <symbol id="ic-menu" viewBox="0 0 12 12"><path shape-rendering="crispEdges" d="M1 2h10v2H1zM1 5h10v2H1zM1 8h10v2H1z"/></symbol>
+  <symbol id="ic-close" viewBox="0 0 12 12"><path shape-rendering="crispEdges" d="M1 1h2v1h1v1h1v1h2V3h1V2h1V1h2v2h-1v1H9v1H8v2h1v1h1v1h1v2H9v-1H8V9H7V8H5v1H4v1H3v1H1V9h1V8h1V7h1V5H3V4H2V3H1z"/></symbol>
+</svg>
+
+<a class="skip" href="#main" data-i18n="k1">Перейти до основного вмісту</a>
+
+<!-- 1. ШАПКА -->
+<header class="hdr">
+  <div class="wrap hdr-bar">
+    <a class="logo hdr-logo" href="#top" data-i18n-attr="aria-label:k2" aria-label="Software and Computer Museum — на початок сторінки">
+      <span class="logo-box"><svg class="ic i-l" aria-hidden="true"><use href="#ic-monitor"/></svg></span>
+      <span class="disp logo-name">Software and Computer Museum</span>
+    </a>
+    <nav class="nav" data-i18n-attr="aria-label:k4" aria-label="Розділи сторінки">
+      <a class="nl" href="#tours" data-section="tours" aria-current="false"><svg class="ic i-s" aria-hidden="true"><use href="#ic-arrow-right"/></svg><span data-i18n="k5">Екскурсії</span></a>
+      <a class="nl" href="#exhibits" data-section="exhibits" aria-current="false"><svg class="ic i-s" aria-hidden="true"><use href="#ic-arrow-right"/></svg><span data-i18n="k6">Експонати</span></a>
+      <a class="nl" href="#courses" data-section="courses" aria-current="false"><svg class="ic i-s" aria-hidden="true"><use href="#ic-arrow-right"/></svg><span data-i18n="k7">Курси</span></a>
+      <a class="nl" href="articles.html" aria-current="false" data-href-uk="articles.html" data-href-en="articles-en.html"><svg class="ic i-s" aria-hidden="true"><use href="#ic-arrow-right"/></svg><span data-i18n="k148">Статті</span></a>
+      <a class="nl" href="#contacts" data-section="contacts" aria-current="false"><svg class="ic i-s" aria-hidden="true"><use href="#ic-arrow-right"/></svg><span data-i18n="k8">Контакти</span></a>
+    </nav>
+    <div class="hdr-actions">
+      <div class="langs" role="group" data-i18n-attr="aria-label:k9" aria-label="Мова сайту">
+        <button type="button" class="lang" data-lang="uk" aria-pressed="true" data-i18n-attr="aria-label:k10" aria-label="UA — українська"><svg class="ic i-s" aria-hidden="true"><use href="#ic-check"/></svg>UA</button>
+        <button type="button" class="lang" data-lang="en" lang="en" aria-pressed="false" data-i18n-attr="aria-label:k12" aria-label="EN — English"><svg class="ic i-s" aria-hidden="true"><use href="#ic-check"/></svg>EN</button>
+      </div>
+      <a class="btn" href="#booking" data-i18n="k14">Записатися</a>
+    </div>
+    <button type="button" class="btn btn-ghost burger" aria-expanded="false" aria-controls="mobile-menu">
+      <span class="burger-closed" style="display: inline-flex; align-items: center; gap: var(--space-2);"><svg class="ic i-l" aria-hidden="true"><use href="#ic-menu"/></svg><span data-i18n="k15">Меню</span></span>
+      <span class="burger-open" style="display: inline-flex; align-items: center; gap: var(--space-2);" hidden><svg class="ic i-l" aria-hidden="true"><use href="#ic-close"/></svg><span class="sr-only" data-i18n="k16">Закрити</span></span>
+    </button>
+  </div>
+  <div class="wrap mmenu" id="mobile-menu" hidden>
+    <nav class="mnav" data-i18n-attr="aria-label:k17" aria-label="Розділи сторінки (мобільне меню)">
+      <a class="ml" href="#tours" data-section="tours" aria-current="false"><span data-i18n="k5">Екскурсії</span><svg class="ic i-m go" aria-hidden="true"><use href="#ic-arrow-right"/></svg><span class="here" aria-hidden="true"><svg class="ic i-s"><use href="#ic-check"/></svg><span data-i18n="k18">ви тут</span></span></a>
+      <a class="ml" href="#exhibits" data-section="exhibits" aria-current="false"><span data-i18n="k6">Експонати</span><svg class="ic i-m go" aria-hidden="true"><use href="#ic-arrow-right"/></svg><span class="here" aria-hidden="true"><svg class="ic i-s"><use href="#ic-check"/></svg><span data-i18n="k18">ви тут</span></span></a>
+      <a class="ml" href="#courses" data-section="courses" aria-current="false"><span data-i18n="k7">Курси</span><svg class="ic i-m go" aria-hidden="true"><use href="#ic-arrow-right"/></svg><span class="here" aria-hidden="true"><svg class="ic i-s"><use href="#ic-check"/></svg><span data-i18n="k18">ви тут</span></span></a>
+      <a class="ml" href="articles.html" aria-current="false" data-href-uk="articles.html" data-href-en="articles-en.html"><span data-i18n="k148">Статті</span><svg class="ic i-m go" aria-hidden="true"><use href="#ic-arrow-right"/></svg><span class="here" aria-hidden="true"><svg class="ic i-s"><use href="#ic-check"/></svg><span data-i18n="k18">ви тут</span></span></a>
+      <a class="ml" href="#contacts" data-section="contacts" aria-current="false"><span data-i18n="k8">Контакти</span><svg class="ic i-m go" aria-hidden="true"><use href="#ic-arrow-right"/></svg><span class="here" aria-hidden="true"><svg class="ic i-s"><use href="#ic-check"/></svg><span data-i18n="k18">ви тут</span></span></a>
+    </nav>
+    <div class="mmenu-actions">
+      <div class="langs" role="group" data-i18n-attr="aria-label:k9" aria-label="Мова сайту">
+        <button type="button" class="lang" data-lang="uk" aria-pressed="true" data-i18n-attr="aria-label:k10" aria-label="UA — українська"><svg class="ic i-s" aria-hidden="true"><use href="#ic-check"/></svg>UA</button>
+        <button type="button" class="lang" data-lang="en" lang="en" aria-pressed="false" data-i18n-attr="aria-label:k12" aria-label="EN — English"><svg class="ic i-s" aria-hidden="true"><use href="#ic-check"/></svg>EN</button>
+      </div>
+      <a class="btn" href="#booking" data-close-menu data-i18n="k14">Записатися</a>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+<!-- 2. ПЕРШИЙ ЕКРАН -->
+<section class="hero" data-theme="dark" aria-labelledby="hero-title">
+  <div class="wrap hero-grid">
+    <div class="hero-text">
+      <p class="mono prompt" aria-hidden="true"><span data-i18n="k19">C:\MUSEUM&gt; start</span><span class="cursor"></span></p>
+      <h1 id="hero-title" class="disp h1" data-i18n="k3">Software and Computer Museum</h1>
+      <p class="lead" data-i18n="k20">Подорож від перших персональних комп'ютерів до сучасних програм, яку можна побачити, почути й спробувати власноруч.</p>
+      <div class="hero-btns">
+        <a class="btn" href="#tours"><svg class="ic i-m" aria-hidden="true"><use href="#ic-ticket"/></svg><span data-i18n="k5">Екскурсії</span></a>
+        <a class="btn" href="#exhibits"><svg class="ic i-m" aria-hidden="true"><use href="#ic-floppy"/></svg><span data-i18n="k6">Експонати</span></a>
+        <a class="btn" href="#courses"><svg class="ic i-m" aria-hidden="true"><use href="#ic-book"/></svg><span data-i18n="k7">Курси</span></a>
+      </div>
+    </div>
+    <div class="win decor" aria-hidden="true">
+      <div class="wtitle"><span data-i18n="k21">MUSEUM.EXE</span><span class="wctl"><span></span><span></span><span></span></span></div>
+      <div class="decor-body">
+        <div class="decor-screen"><svg class="ic"><use href="#ic-monitor"/></svg></div>
+        <pre class="mono decor-pre"><span data-i18n="k22">C:\MUSEUM&gt; dir
+ЕКСКУРСІЇ    &lt;DIR&gt;
+ЕКСПОНАТИ    &lt;DIR&gt;
+КУРСИ        &lt;DIR&gt;</span>
+<span class="muted" data-i18n="k23">3 напрями · 1 форма запису</span></pre>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 3. ЕКСКУРСІЇ -->
+<section id="tours" class="sec" aria-labelledby="tours-title">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="mono prompt" aria-hidden="true" data-i18n="k24">C:\MUSEUM&gt; dir /екскурсії</p>
+      <h2 id="tours-title" class="disp h2" data-i18n="k5">Екскурсії</h2>
+      <p class="lead" data-i18n="k25">Екскурсовод проведе Вас від великих обчислювальних машин до домашніх комп'ютерів і приставок. Оберіть формат, а зручний час ми підберемо разом.</p>
+    </div>
+    <div class="g3">
+
+      <article class="win card">
+        <div class="wtitle" aria-hidden="true"><span data-i18n="k26">ЕКСКУРСІЯ_01.EXE</span><span class="wctl"><span></span><span></span><span></span></span></div>
+        <div class="winbody">
+          <h3 class="disp ct" data-i18n="k27">Оглядова: від ЕОМ до смартфона</h3>
+          <p data-i18n="k28">Головна історія музею за півтори години: як комп'ютери переїхали з цілих кімнат на робочий стіл, а потім — у кишеню.</p>
+          <dl class="facts">
+            <dt class="lbl"><svg class="ic i-m" aria-hidden="true"><use href="#ic-clock"/></svg><span data-i18n="k29">Тривалість</span></dt>
+            <dd data-i18n="k30">90 хвилин</dd>
+            <dt class="lbl"><svg class="ic i-m" aria-hidden="true"><use href="#ic-person"/></svg><span data-i18n="k31">Для кого</span></dt>
+            <dd data-i18n="k32">Для всіх від 10 років</dd>
+            <dt class="lbl"><svg class="ic i-m" aria-hidden="true"><use href="#ic-ticket"/></svg><span data-i18n="k33">Ціна</span></dt>
+            <dd class="price"><strong data-i18n="k34">200 грн</strong><span class="tag" data-i18n="k35">заглушка</span></dd>
+          </dl>
+          <a class="btn" href="#booking" data-book="t1" data-i18n="k14" data-i18n-attr="aria-label:k36" aria-label="Записатися на оглядову екскурсію">Записатися</a>
+        </div>
+      </article>
+
+      <article class="win card">
+        <div class="wtitle" aria-hidden="true"><span data-i18n="k37">ЕКСКУРСІЯ_02.EXE</span><span class="wctl"><span></span><span></span><span></span></span></div>
+        <div class="winbody">
+          <h3 class="disp ct" data-i18n="k38">Ігри 80–90-х: грати можна</h3>
+          <p data-i18n="k39">Приставки й ігрові комп'ютери, на яких виросло ціле покоління. Наприкінці — час пограти самим.</p>
+          <dl class="facts">
+            <dt class="lbl"><svg class="ic i-m" aria-hidden="true"><use href="#ic-clock"/></svg><span data-i18n="k29">Тривалість</span></dt>
+            <dd data-i18n="k40">60 хвилин</dd>
+            <dt class="lbl"><svg class="ic i-m" aria-hidden="true"><use href="#ic-person"/></svg><span data-i18n="k31">Для кого</span></dt>
+            <dd data-i18n="k41">Школярі 8–16 років і батьки</dd>
+            <dt class="lbl"><svg class="ic i-m" aria-hidden="true"><use href="#ic-ticket"/></svg><span data-i18n="k33">Ціна</span></dt>
+            <dd class="price"><strong data-i18n="k42">180 грн</strong><span class="tag" data-i18n="k35">заглушка</span></dd>
+          </dl>
+          <a class="btn" href="#booking" data-book="t2" data-i18n="k14" data-i18n-attr="aria-label:k43" aria-label="Записатися на екскурсію «Ігри 80–90-х»">Записатися</a>
+        </div>
+      </article>
+
+      <article class="win card">
+        <div class="wtitle" aria-hidden="true"><span data-i18n="k44">ЕКСКУРСІЯ_03.EXE</span><span class="wctl"><span></span><span></span><span></span></span></div>
+        <div class="winbody">
+          <h3 class="disp ct" data-i18n="k45">Групова для класу</h3>
+          <p data-i18n="k46">Екскурсія під шкільну програму з інформатики. Дату й час підбираємо разом із вчителем.</p>
+          <dl class="facts">
+            <dt class="lbl"><svg class="ic i-m" aria-hidden="true"><use href="#ic-clock"/></svg><span data-i18n="k29">Тривалість</span></dt>
+            <dd data-i18n="k47">75 хвилин</dd>
+            <dt class="lbl"><svg class="ic i-m" aria-hidden="true"><use href="#ic-person"/></svg><span data-i18n="k31">Для кого</span></dt>
+            <dd data-i18n="k48">Групи до 25 осіб, вчителі й організатори</dd>
+            <dt class="lbl"><svg class="ic i-m" aria-hidden="true"><use href="#ic-ticket"/></svg><span data-i18n="k33">Ціна</span></dt>
+            <dd class="price"><strong data-i18n="k49">2 500 грн за групу</strong><span class="tag" data-i18n="k35">заглушка</span></dd>
+          </dl>
+          <a class="btn" href="#booking" data-book="t3" data-i18n="k14" data-i18n-attr="aria-label:k50" aria-label="Записатися на групову екскурсію для класу">Записатися</a>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- 4. ЕКСПОНАТИ -->
+<section id="exhibits" class="sec sec-alt" aria-labelledby="exhibits-title">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="mono prompt" aria-hidden="true" data-i18n="k51">C:\MUSEUM&gt; dir /експонати</p>
+      <h2 id="exhibits-title" class="disp h2" data-i18n="k6">Експонати</h2>
+      <p class="lbl" data-i18n="k147">6 експонатів 80–90-х — від дискети 5,25″ до модема</p>
+      <p class="lead" data-i18n="k52">Кожен предмет колекції можна побачити наживо, а деякі — ще й увімкнути. Ось кілька з тих, із яких починається знайомство з музеєм.</p>
+    </div>
+    <div class="g3" id="exhibits-grid">
+
+      <article class="win card card-exhibit">
+        <div class="wtitle" aria-hidden="true"><span data-i18n="k53">PC_80X.IMG</span><span class="wctl"><span></span><span></span><span></span></span></div>
+        <div class="ph ph-photo" role="img" data-i18n-attr="aria-label:k54" aria-label="Персональний комп'ютер 80-х в експозиції музею: монітор, системний блок і клавіатура">
+          <svg class="ill" viewBox="0 0 160 120" aria-hidden="true" focusable="false"><rect class="f s" x="38" y="8" width="84" height="62"/><rect class="d" x="46" y="16" width="68" height="44"/><rect class="l" x="52" y="22" width="22" height="4"/><rect class="l" x="52" y="30" width="36" height="4"/><rect class="l" x="52" y="38" width="28" height="4"/><rect class="l blink" x="82" y="38" width="6" height="4"/><rect class="a s" x="28" y="74" width="104" height="20"/><rect class="d" x="40" y="81" width="34" height="5"/><rect class="d" x="110" y="80" width="12" height="7"/><rect class="f s" x="20" y="98" width="120" height="16"/><path class="s" d="M28 104h104M28 109h104M44 98v16M60 98v16M76 98v16M92 98v16M108 98v16M124 98v16"/></svg>
+          <span class="dither" aria-hidden="true"></span>
+        </div>
+        <div class="winbody">
+          <p class="lbl year">1984 <span class="tag" data-i18n="k35">заглушка</span></p>
+          <h3 class="disp ct" data-i18n="k56">Персональний комп'ютер 80-х</h3>
+          <p class="exhibit-text" data-i18n="k57">Один із перших комп'ютерів, що помістився на звичайному столі. Уявіть: його вмикали не кнопкою, а клацанням маленького перемикача.</p>
+        </div>
+      </article>
+
+      <article class="win card card-exhibit">
+        <div class="wtitle" aria-hidden="true"><span data-i18n="k58">FLOPPY.IMG</span><span class="wctl"><span></span><span></span><span></span></span></div>
+        <div class="ph ph-photo" role="img" data-i18n-attr="aria-label:k59" aria-label="Гнучка дискета 5,25 дюйма з паперовою етикеткою, крупним планом">
+          <svg class="ill" viewBox="0 0 160 120" aria-hidden="true" focusable="false"><rect class="d s" x="32" y="8" width="96" height="104"/><rect class="f s" x="44" y="14" width="72" height="24"/><path class="s" d="M52 22h40M52 30h56"/><circle class="a s" cx="80" cy="66" r="14"/><circle class="f s" cx="80" cy="66" r="6"/><rect class="a s" x="72" y="86" width="16" height="22"/><rect class="f s" x="120" y="44" width="8" height="10"/></svg>
+          <span class="dither" aria-hidden="true"></span>
+        </div>
+        <div class="winbody">
+          <p class="lbl year">1978 <span class="tag" data-i18n="k35">заглушка</span></p>
+          <h3 class="disp ct" data-i18n="k60">Дискета 5,25″</h3>
+          <p class="exhibit-text" data-i18n="k61">Погляньте на цей гнучкий диск: на нього вміщалося менше, ніж займає одне фото на Вашому телефоні.</p>
+        </div>
+      </article>
+
+      <article class="win card card-exhibit">
+        <div class="wtitle" aria-hidden="true"><span data-i18n="k62">GUI_V1.IMG</span><span class="wctl"><span></span><span></span><span></span></span></div>
+        <div class="ph ph-photo" role="img" data-i18n-attr="aria-label:k63" aria-label="Екран комп'ютера з першою версією графічної операційної системи: вікна, значки й курсор миші">
+          <svg class="ill" viewBox="0 0 160 120" aria-hidden="true" focusable="false"><rect class="f s" x="12" y="6" width="136" height="108"/><rect class="a" x="15" y="9" width="130" height="102"/><rect class="f s" x="26" y="18" width="64" height="48"/><rect class="d" x="26" y="18" width="64" height="9"/><path class="s" d="M32 36h40M32 44h48M32 52h30"/><rect class="f s" x="68" y="44" width="68" height="50"/><rect class="d" x="68" y="44" width="68" height="9"/><rect class="a s" x="76" y="60" width="12" height="10"/><rect class="a s" x="96" y="60" width="12" height="10"/><rect class="a s" x="116" y="60" width="12" height="10"/><rect class="f s" x="22" y="80" width="12" height="12"/><rect class="f s" x="42" y="80" width="12" height="12"/><path class="f s" d="M104 76v22l6-6 5 10 5-2-5-10h8z"/></svg>
+          <span class="dither" aria-hidden="true"></span>
+        </div>
+        <div class="winbody">
+          <p class="lbl year">1985 <span class="tag" data-i18n="k35">заглушка</span></p>
+          <h3 class="disp ct" data-i18n="k64">Перша версія графічної ОС</h3>
+          <p class="exhibit-text" data-i18n="k65">Вікна, значки й стрілка миші, до яких Ви звикли, вперше замінили чорний екран, де все доводилося набирати командами.</p>
+        </div>
+      </article>
+
+      <article class="win card card-exhibit">
+        <div class="wtitle" aria-hidden="true"><span data-i18n="k66">CONSOLE.IMG</span><span class="wctl"><span></span><span></span><span></span></span></div>
+        <div class="ph ph-photo" role="img" data-i18n-attr="aria-label:k67" aria-label="Ігрова приставка 90-х із двома джойстиками та картриджем">
+          <svg class="ill" viewBox="0 0 160 120" aria-hidden="true" focusable="false"><rect class="a s" x="48" y="10" width="40" height="26"/><path class="s" d="M56 18h24M56 24h24"/><rect class="f s" x="30" y="34" width="100" height="36"/><rect class="d" x="44" y="34" width="48" height="8"/><rect class="d" x="104" y="44" width="16" height="6"/><rect class="a s" x="104" y="56" width="16" height="6"/><path class="s" d="M44 70v14M116 70v14"/><rect class="f s" x="16" y="84" width="54" height="28"/><rect class="f s" x="90" y="84" width="54" height="28"/><path class="d" d="M26 95h6v-5h6v5h6v6h-6v5h-6v-5h-6z"/><circle class="d" cx="56" cy="94" r="4"/><circle class="a s" cx="60" cy="104" r="4"/><path class="d" d="M100 95h6v-5h6v5h6v6h-6v5h-6v-5h-6z"/><circle class="d" cx="130" cy="94" r="4"/><circle class="a s" cx="134" cy="104" r="4"/></svg>
+          <span class="dither" aria-hidden="true"></span>
+        </div>
+        <div class="winbody">
+          <p class="lbl year">1993 <span class="tag" data-i18n="k35">заглушка</span></p>
+          <h3 class="disp ct" data-i18n="k68">Ігрова приставка 90-х</h3>
+          <p class="exhibit-text" data-i18n="k69">Змінні ігрові касети, два джойстики й телевізор у вітальні — так минали вихідні багатьох родин. Можливо, і Вашої?</p>
+        </div>
+      </article>
+
+      <article class="win card card-exhibit">
+        <div class="wtitle" aria-hidden="true"><span data-i18n="k70">PRINTER.IMG</span><span class="wctl"><span></span><span></span><span></span></span></div>
+        <div class="ph ph-photo" role="img" data-i18n-attr="aria-label:k71" aria-label="Матричний принтер із заправленим перфорованим папером в експозиції музею">
+          <svg class="ill" viewBox="0 0 160 120" aria-hidden="true" focusable="false"><rect class="f s" x="40" y="6" width="80" height="56"/><path class="s" d="M50 6v56M110 6v56"/><path class="d" d="M43 12h4v4h-4zM43 24h4v4h-4zM43 36h4v4h-4zM43 48h4v4h-4zM113 12h4v4h-4zM113 24h4v4h-4zM113 36h4v4h-4zM113 48h4v4h-4z"/><path class="s dots" d="M58 16h44M58 26h36M58 36h40M58 46h28"/><rect class="a s" x="20" y="56" width="120" height="40"/><rect class="d" x="36" y="62" width="88" height="8"/><rect class="f s" x="30" y="78" width="40" height="10"/><rect class="d" x="112" y="78" width="8" height="8"/><rect class="d" x="124" y="78" width="8" height="8"/><rect class="f s" x="26" y="96" width="108" height="16"/></svg>
+          <span class="dither" aria-hidden="true"></span>
+        </div>
+        <div class="winbody">
+          <p class="lbl year">1987 <span class="tag" data-i18n="k35">заглушка</span></p>
+          <h3 class="disp ct" data-i18n="k72">Матричний принтер</h3>
+          <p class="exhibit-text" data-i18n="k73">Цей принтер друкував крихітними голочками крізь стрічку з фарбою, а його дзижчання було чути на весь офіс. Можливо, Ви пам'ятаєте цей звук?</p>
+        </div>
+      </article>
+
+      <article class="win card card-exhibit">
+        <div class="wtitle" aria-hidden="true"><span data-i18n="k74">MODEM.IMG</span><span class="wctl"><span></span><span></span><span></span></span></div>
+        <div class="ph ph-photo" role="img" data-i18n-attr="aria-label:k75" aria-label="Зовнішній модем 90-х зі світловими індикаторами на передній панелі">
+          <svg class="ill" viewBox="0 0 160 120" aria-hidden="true" focusable="false"><path class="s" d="M86 34c6-6 6-14 0-20M96 40c12-12 12-30 0-42M106 46c18-18 18-44 0-62" transform="translate(-6 14)"/><rect class="f s" x="16" y="56" width="128" height="34"/><rect class="a s" x="16" y="56" width="128" height="10"/><rect class="d" x="28" y="74" width="8" height="6"/><rect class="d" x="44" y="74" width="8" height="6"/><rect class="a s blink" x="60" y="74" width="8" height="6"/><rect class="d" x="76" y="74" width="8" height="6"/><rect class="a s blink2" x="92" y="74" width="8" height="6"/><rect class="d" x="108" y="74" width="8" height="6"/><rect class="d" x="24" y="90" width="12" height="6"/><rect class="d" x="124" y="90" width="12" height="6"/><path class="s" d="M144 72h6v34H24v8"/></svg>
+          <span class="dither" aria-hidden="true"></span>
+        </div>
+        <div class="winbody">
+          <p class="lbl year">1995 <span class="tag" data-i18n="k35">заглушка</span></p>
+          <h3 class="disp ct" data-i18n="k76">Модем</h3>
+          <p class="exhibit-text" data-i18n="k77">Цей пристрій підключав комп'ютер до інтернету через звичайну телефонну лінію — з тим самим шипінням, яке Ви, можливо, досі впізнаєте.</p>
+        </div>
+      </article>
+
+    </div>
+    <!-- «Показати більше»: app.js спершу показує 3 експонати, кнопка відкриває решту. Без JS видно всі. -->
+    <div class="more" hidden>
+      <button type="button" class="btn" aria-controls="exhibits-grid" aria-expanded="false"><svg class="ic i-m" aria-hidden="true"><use href="#ic-arrow-down"/></svg><span data-i18n="k78">Показати більше експонатів</span></button>
+    </div>
+    <!-- Заклик до запису: експонати ведуть до оглядової екскурсії (не з макета) -->
+    <div class="exhibits-cta">
+      <p data-i18n="k146">Усі ці експонати можна побачити наживо на оглядовій екскурсії.</p>
+      <a class="btn" href="#booking" data-book="t1" data-i18n="k36">Записатися на оглядову екскурсію</a>
+    </div>
+  </div>
+</section>
+
+<!-- 5. КУРСИ -->
+<section id="courses" class="sec" aria-labelledby="courses-title">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="mono prompt" aria-hidden="true" data-i18n="k80">C:\MUSEUM&gt; dir /курси</p>
+      <h2 id="courses-title" class="disp h2" data-i18n="k7">Курси</h2>
+      <p class="lead" data-i18n="k81">Невеликі групи, спокійний темп і практика на справжній техніці — для школярів, дорослих і всіх, хто хоче нарешті розібратися.</p>
+    </div>
+    <div class="g3">
+
+      <article class="win card">
+        <div class="wtitle" aria-hidden="true"><span data-i18n="k82">КУРС_01.EXE</span><span class="wctl"><span></span><span></span><span></span></span></div>
+        <div class="winbody">
+          <h3 class="disp ct" data-i18n="k83">Комп'ютер без страху</h3>
+          <p data-i18n="k84">Від увімкнення до відеодзвінка з рідними: спокійно, у маленькій групі, з повторенням кожного кроку.</p>
+          <dl class="facts">
+            <dt class="lbl"><svg class="ic i-m" aria-hidden="true"><use href="#ic-calendar"/></svg><span data-i18n="k85">Занять</span></dt>
+            <dd data-i18n="k86">8 занять по 90 хвилин</dd>
+            <dt class="lbl"><svg class="ic i-m" aria-hidden="true"><use href="#ic-person"/></svg><span data-i18n="k31">Для кого</span></dt>
+            <dd data-i18n="k87">Дорослі 40+, які лише починають</dd>
+            <dt class="lbl"><svg class="ic i-m" aria-hidden="true"><use href="#ic-ticket"/></svg><span data-i18n="k33">Ціна</span></dt>
+            <dd class="price"><strong data-i18n="k88">1 600 грн за курс</strong><span class="tag" data-i18n="k35">заглушка</span></dd>
+          </dl>
+          <a class="btn" href="#booking" data-book="c1" data-i18n="k14" data-i18n-attr="aria-label:k89" aria-label="Записатися на курс «Комп'ютер без страху»">Записатися</a>
+        </div>
+      </article>
+
+      <article class="win card">
+        <div class="wtitle" aria-hidden="true"><span data-i18n="k90">КУРС_02.EXE</span><span class="wctl"><span></span><span></span><span></span></span></div>
+        <div class="winbody">
+          <h3 class="disp ct" data-i18n="k91">Перша програма</h3>
+          <p data-i18n="k92">Пишемо прості ігри на старих і нових комп'ютерах та розбираємося, як програма «думає».</p>
+          <dl class="facts">
+            <dt class="lbl"><svg class="ic i-m" aria-hidden="true"><use href="#ic-calendar"/></svg><span data-i18n="k85">Занять</span></dt>
+            <dd data-i18n="k93">10 занять по 60 хвилин</dd>
+            <dt class="lbl"><svg class="ic i-m" aria-hidden="true"><use href="#ic-person"/></svg><span data-i18n="k31">Для кого</span></dt>
+            <dd data-i18n="k94">Школярі 10–14 років</dd>
+            <dt class="lbl"><svg class="ic i-m" aria-hidden="true"><use href="#ic-ticket"/></svg><span data-i18n="k33">Ціна</span></dt>
+            <dd class="price"><strong data-i18n="k95">2 000 грн за курс</strong><span class="tag" data-i18n="k35">заглушка</span></dd>
+          </dl>
+          <a class="btn" href="#booking" data-book="c2" data-i18n="k14" data-i18n-attr="aria-label:k96" aria-label="Записатися на курс «Перша програма»">Записатися</a>
+        </div>
+      </article>
+
+      <article class="win card">
+        <div class="wtitle" aria-hidden="true"><span data-i18n="k97">КУРС_03.EXE</span><span class="wctl"><span></span><span></span><span></span></span></div>
+        <div class="winbody">
+          <h3 class="disp ct" data-i18n="k98">Ретро-техніка руками</h3>
+          <p data-i18n="k99">Розбираємо, чистимо й запускаємо справжні комп'ютери 80–90-х разом із реставраторами музею.</p>
+          <dl class="facts">
+            <dt class="lbl"><svg class="ic i-m" aria-hidden="true"><use href="#ic-calendar"/></svg><span data-i18n="k85">Занять</span></dt>
+            <dd data-i18n="k100">6 занять по 2 години</dd>
+            <dt class="lbl"><svg class="ic i-m" aria-hidden="true"><use href="#ic-person"/></svg><span data-i18n="k31">Для кого</span></dt>
+            <dd data-i18n="k101">Підлітки від 14 років і дорослі</dd>
+            <dt class="lbl"><svg class="ic i-m" aria-hidden="true"><use href="#ic-ticket"/></svg><span data-i18n="k33">Ціна</span></dt>
+            <dd class="price"><strong data-i18n="k102">1 500 грн за курс</strong><span class="tag" data-i18n="k35">заглушка</span></dd>
+          </dl>
+          <a class="btn" href="#booking" data-book="c3" data-i18n="k14" data-i18n-attr="aria-label:k103" aria-label="Записатися на курс «Ретро-техніка руками»">Записатися</a>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- 6–7. ФОРМА ЗАПИСУ + КОНТАКТИ -->
+<section id="booking" class="sec sec-alt" aria-labelledby="booking-title">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="mono prompt" aria-hidden="true" data-i18n="k104">C:\MUSEUM&gt; запис</p>
+      <h2 id="booking-title" class="disp h2" data-i18n="k105">Запис на екскурсію або курс</h2>
+      <p class="lead" data-i18n="k106">Залиште ім'я та телефон — ми зателефонуємо, щоб узгодити дату й час. Це займе хвилину.</p>
+    </div>
+    <div class="two">
+
+      <div class="win">
+        <div class="wtitle" aria-hidden="true"><span data-i18n="k107">ЗАПИС.EXE</span><span class="wctl"><span></span><span></span><span></span></span></div>
+        <div class="winbody">
+          <form id="booking-form" class="form" novalidate>
+            <p class="caption muted" data-i18n="k108">Усі поля обов'язкові.</p>
+            <div class="fgroup">
+              <label for="f-dir" class="lbl"><span data-i18n="k109">Напрям</span><span aria-hidden="true"> *</span></label>
+              <div class="select-wrap">
+                <select id="f-dir" name="direction" class="field" aria-required="true" aria-invalid="false" aria-describedby="f-dir-err">
+                  <option value="" data-i18n="k110">Оберіть екскурсію або курс</option>
+                  <optgroup label="Екскурсії" data-i18n-attr="label:k5">
+                    <option value="t1" data-i18n="k111">Оглядова екскурсія</option>
+                    <option value="t2" data-i18n="k112">Ігри 80–90-х</option>
+                    <option value="t3" data-i18n="k45">Групова для класу</option>
+                  </optgroup>
+                  <optgroup label="Курси" data-i18n-attr="label:k7">
+                    <option value="c1" data-i18n="k83">Комп'ютер без страху</option>
+                    <option value="c2" data-i18n="k91">Перша програма</option>
+                    <option value="c3" data-i18n="k98">Ретро-техніка руками</option>
+                  </optgroup>
+                </select>
+                <svg class="ic i-m" aria-hidden="true"><use href="#ic-arrow-down"/></svg>
+              </div>
+              <p id="f-dir-err" class="ferr" hidden><svg class="ic i-m" aria-hidden="true"><use href="#ic-alert"/></svg><span data-i18n="k113">Оберіть екскурсію або курс зі списку.</span></p>
+            </div>
+            <div class="fgroup">
+              <label for="f-name" class="lbl"><span data-i18n="k114">Ім'я</span><span aria-hidden="true"> *</span></label>
+              <input id="f-name" name="name" class="field" type="text" autocomplete="name" placeholder="Як до Вас звертатися" data-i18n-attr="placeholder:k115" aria-required="true" aria-invalid="false" aria-describedby="f-name-err">
+              <p id="f-name-err" class="ferr" hidden><svg class="ic i-m" aria-hidden="true"><use href="#ic-alert"/></svg><span data-i18n="k116">Вкажіть, як до Вас звертатися.</span></p>
+            </div>
+            <div class="fgroup">
+              <label for="f-phone" class="lbl"><span data-i18n="k117">Телефон</span><span aria-hidden="true"> *</span></label>
+              <input id="f-phone" name="phone" class="field" type="tel" inputmode="tel" autocomplete="tel" placeholder="+380 __ ___ __ __" aria-required="true" aria-invalid="false" aria-describedby="f-phone-hint f-phone-err">
+              <p id="f-phone-hint" class="caption muted" data-i18n="k118">Формат: +380 XX XXX XX XX</p>
+              <p id="f-phone-err" class="ferr" hidden><svg class="ic i-m" aria-hidden="true"><use href="#ic-alert"/></svg><span data-i18n="k119">Перевірте номер: потрібно +380 і ще 9 цифр.</span></p>
+            </div>
+            <div id="f-fail" class="fail" tabindex="-1" hidden>
+              <svg class="ic i-m" aria-hidden="true"><use href="#ic-alert"/></svg>
+              <p><strong data-i18n="k120">Не вдалося надіслати заявку.</strong> <span data-i18n="k121">Дані, які Ви ввели, збережено — спробуйте ще раз або зателефонуйте нам:</span> <a href="tel:+380440000000" data-i18n-attr="aria-label:k122" aria-label="Зателефонувати в музей: +380 44 000 00 00">+380 44 000 00 00</a>.</p>
+            </div>
+            <button id="f-submit" type="submit" class="btn btn-block">
+              <span class="when-idle" style="display: inline-flex; align-items: center; gap: var(--space-2);"><span data-i18n="k123">Надіслати заявку</span><svg class="ic i-m" aria-hidden="true"><use href="#ic-arrow-right"/></svg></span>
+              <span class="when-busy" style="display: inline-flex; align-items: center; gap: var(--space-2);" hidden><svg class="ic i-m" aria-hidden="true"><use href="#ic-clock"/></svg><span data-i18n="k124">Надсилаємо заявку…</span></span>
+            </button>
+          </form>
+          <div id="f-success" class="success" tabindex="-1" hidden>
+            <span class="success-mark"><svg class="ic i-xxl" aria-hidden="true"><use href="#ic-check"/></svg></span>
+            <h3 class="disp ct" data-i18n="k125">Дякуємо!</h3>
+            <p data-i18n="k126">Ми зателефонуємо Вам найближчим часом.</p>
+            <p class="caption muted"><span data-i18n="k127">Ваша заявка:</span> <span id="f-sent-label"></span></p>
+            <button id="f-again" type="button" class="btn btn-ghost" data-i18n="k128">Надіслати ще одну заявку</button>
+          </div>
+        </div>
+      </div>
+
+      <div id="contacts" class="win">
+        <div class="wtitle" aria-hidden="true"><span data-i18n="k129">КОНТАКТИ.TXT</span><span class="wctl"><span></span><span></span><span></span></span></div>
+        <div class="winbody contacts-body">
+          <h3 class="disp ct" data-i18n="k8">Контакти</h3>
+          <dl class="contact-list">
+            <div>
+              <dt class="lbl"><svg class="ic i-m" aria-hidden="true"><use href="#ic-pin"/></svg><span data-i18n="k130">Адреса</span></dt>
+              <dd class="price"><span data-i18n="k131">м. Київ, вул. Прикладна, 12</span> <span class="tag" data-i18n="k35">заглушка</span></dd>
+            </div>
+            <div>
+              <dt class="lbl"><svg class="ic i-m" aria-hidden="true"><use href="#ic-clock"/></svg><span data-i18n="k132">Години роботи</span></dt>
+              <dd><span data-i18n="k133">Вт–Нд: 10:00–18:00</span><br><span data-i18n="k134">Пн — вихідний</span> <span class="tag" data-i18n="k35">заглушка</span></dd>
+            </div>
+            <div>
+              <dt class="lbl"><svg class="ic i-m" aria-hidden="true"><use href="#ic-phone"/></svg><span data-i18n="k117">Телефон</span></dt>
+              <dd class="price"><a class="tel" href="tel:+380440000000" data-i18n-attr="aria-label:k122" aria-label="Зателефонувати в музей: +380 44 000 00 00">+380 44 000 00 00</a> <span class="tag" data-i18n="k35">заглушка</span></dd>
+            </div>
+          </dl>
+          <div class="ph ph-map" role="img" data-i18n-attr="aria-label:k135" aria-label="Карта району з позначкою музею: м. Київ, вул. Прикладна, 12">
+            <svg class="ic i-xxl" aria-hidden="true"><use href="#ic-pin"/></svg>
+            <span class="ph-label" data-i18n="k136">карта — заглушка</span>
+            <span class="dither" aria-hidden="true"></span>
+          </div>
+          <a class="btn btn-ghost" href="https://www.google.com/maps/dir/" target="_blank" rel="noopener" data-i18n-attr="aria-label:k137" aria-label="Прокласти маршрут у Google Картах (відкриється в новій вкладці)"><svg class="ic i-m" aria-hidden="true"><use href="#ic-pin"/></svg><span data-i18n="k138">Прокласти маршрут у Google Картах</span></a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- 8. ПІДВАЛ -->
+<footer class="ftr" data-theme="dark">
+  <div class="wrap ftr-inner">
+    <div class="ftr-grid">
+      <div class="ftr-col ftr-about">
+        <a class="logo" href="#top" data-i18n-attr="aria-label:k2" aria-label="Software and Computer Museum — на початок сторінки">
+          <span class="logo-box"><svg class="ic i-l" aria-hidden="true"><use href="#ic-monitor"/></svg></span>
+          <span class="disp logo-name">Software and Computer Museum</span>
+        </a>
+        <p class="caption muted" data-i18n="k139">Екскурсії, експонати й курси про історію комп'ютерів і програм.</p>
+      </div>
+      <div class="ftr-col">
+        <p class="h4" data-i18n="k8">Контакти</p>
+        <p class="caption muted"><span data-i18n="k131">м. Київ, вул. Прикладна, 12</span><br><span data-i18n="k133">Вт–Нд: 10:00–18:00</span></p>
+        <a class="ftr-link" href="tel:+380440000000" style="font-weight: 600;" data-i18n-attr="aria-label:k122" aria-label="Зателефонувати в музей: +380 44 000 00 00">+380 44 000 00 00</a>
+      </div>
+      <nav class="ftr-col ftr-nav" data-i18n-attr="aria-label:k140" aria-label="Розділи сторінки (підвал)">
+        <p class="h4" data-i18n="k141">Розділи</p>
+        <a class="ftr-link" href="#tours" data-i18n="k5">Екскурсії</a>
+        <a class="ftr-link" href="#exhibits" data-i18n="k6">Експонати</a>
+        <a class="ftr-link" href="#courses" data-i18n="k7">Курси</a>
+        <a class="ftr-link" href="articles.html" data-href-uk="articles.html" data-href-en="articles-en.html" data-i18n="k148">Статті</a>
+        <a class="ftr-link" href="#booking" data-i18n="k142">Запис</a>
+      </nav>
+      <div class="ftr-col">
+        <p class="h4" data-i18n="k143">Мова</p>
+        <div class="langs" role="group" data-i18n-attr="aria-label:k9" aria-label="Мова сайту">
+          <button type="button" class="lang" data-lang="uk" aria-pressed="true" data-i18n-attr="aria-label:k10" aria-label="UA — українська"><svg class="ic i-s" aria-hidden="true"><use href="#ic-check"/></svg>UA</button>
+          <button type="button" class="lang" data-lang="en" lang="en" aria-pressed="false" data-i18n-attr="aria-label:k12" aria-label="EN — English"><svg class="ic i-s" aria-hidden="true"><use href="#ic-check"/></svg>EN</button>
+        </div>
+      </div>
+    </div>
+    <div class="ftr-bottom">
+      <p class="caption muted" data-i18n="k144">© 2026 Software and Computer Museum</p>
+      <p class="mono muted" style="margin: 0;" aria-hidden="true" data-i18n="k145">C:\MUSEUM&gt; exit</p>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/content.uk.js"></script>
+<script src="assets/js/content.en.js"></script>
+<script src="assets/js/booking.js"></script>
+<script src="assets/js/app.js"></script>
+</body>
+</html>
